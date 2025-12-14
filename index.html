@@ -270,7 +270,11 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, var(--primary-dark) 0%, #2d2d44 50%, var(--primary-charcoal) 100%);
+            background: linear-gradient(135deg, rgba(26, 26, 46, 0.85) 0%, rgba(45, 45, 68, 0.8) 50%, rgba(74, 74, 74, 0.85) 100%),
+                        url("https://wp-firstcanadiangraphite-2025.s3.ca-central-1.amazonaws.com/media/2025/09/AAA-BKR-drill-rig-Outcrop-hi-rez-edited-1-scaled.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             color: var(--white);
             padding: 140px 0 100px;
             margin-top: 72px;
@@ -286,7 +290,7 @@
             right: 0;
             bottom: 0;
             background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-            opacity: 0.5;
+            opacity: 0.3;
         }
 
         .container {
@@ -3060,6 +3064,7 @@
         @media (max-width: 768px) {
             .hero {
                 padding: 60px 0 80px;
+                background-attachment: scroll;
             }
 
             .ticker-bar {
